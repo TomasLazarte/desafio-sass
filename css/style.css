@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ESTILOS COMUNES EN TODOS LOS HTML */
+
+body {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    grid-area: header;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-image: radial-gradient(#222432, #171717);
+}
+
+#barra-nav {
+    margin: 5px;
+    padding: 5px;
+    background-image: radial-gradient(#222432, #171717);
+}
+
+#home {
+    margin-left: 100px;
+}
+
+#boton-hamburguesa {
+    background-color: beige;
+}
+
+.menu {
+    margin-right: 100px;
+    flex-grow: 0;
+}
+
+#home, #menu-secciones a {
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    color: beige;
+    transition: all .25s;
+}
+
+#menu-secciones a:hover{
+    color: #C9D1D9;
+    text-decoration: underline;
+}
+
+.menu-secciones a:focus {
+    text-decoration: transparent;
+}
+
+main {
+    grid-area: main;
+    background-image: radial-gradient(rgb(120, 120, 120), #171717);
+}
+
+/* .about-fondo, .discografia-fondo, .contacto-fondo {
+    background-image: radial-gradient(rgb(120, 120, 120), #171717);
+} */
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #C9D1D9;
+}
+
+#footer {
+    grid-area: footer;
+    background-image: radial-gradient(#222432, #171717);
+}
+
+#footer div {
+    margin: 5px;
+    padding: 5px;
+}
+
+#footer div .copyright {
+    margin: 5px;
+    padding: 5px;
+    margin-left: 100px;
+    font-family: 'Roboto Slab', serif;
+    color: beige;
+}
+
+/* -------------------------------------- */
+
+/* ESTILOS SECCIÓN INICIO */
+
+.inicio-contenedor {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.inicio-imagen, .inicio-titulo, .inicio-tour {
+    animation-name: aparecer;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+.inicio-titulo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.inicio-tour {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.primera-col, .segunda-col, .tercera-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primera-col-items, .segunda-col-items, .tercera-col-items {
+    font-size: 18px;
+    color: #C9D1D9;
+    background-color: #222432;
+    border-radius: 10px;
+    border: solid #171717 3px;
+    width: 100%;
+    margin: 5px;
+    transition: all .25s;
+}
+
+.primera-col-items:hover, .segunda-col-items:hover {
+    font-size: 19px;
+}
+
+.tercera-col-items:hover {
+    color: beige;
+    font-size: 19px;
+}
+
+/* -------------------------------------- */
+
+/* ESTILOS SECCIÓN ABOUT */
+
+.about-contenedor {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "texto-uno imagen-uno"
+    "texto-dos imagen-uno"
+    "imagen-dos texto-tres";
+    gap: 15px;
+    font-family: 'Roboto Slab', serif;
+    color: beige;
+    margin: 120px;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.about-titulo {
+    grid-area: titulo;
+}
+
+.about-texto-uno {
+    grid-area: texto-uno;
+    text-shadow: black;
+}
+
+.about-texto-dos {
+    grid-area: texto-dos;
+    text-shadow: black;
+}
+
+.about-img-uno {
+    grid-area: imagen-uno;
+    height: 600px;
+}
+
+.about-img-dos {
+    grid-area: imagen-dos;
+}
+
+.about-texto-tres {
+    grid-area: texto-tres;
+}
+
+/* -------------------------------------- */
+
+/* ESTILOS SECCIÓN DISCOGRAFÍA */
+
+.discografia-contenedor {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "album-uno disco-uno album-dos disco-dos"
+    "album-tres disco-tres album-cuatro disco-cuatro";
+    gap: 30px;
+    margin: 120px;
+    line-height: 2;
+}
+
+.discografia-titulo {
+    grid-area: titulo;
+}
+
+.album-uno {
+    grid-area: album-uno;
+}
+
+.disco-uno {
+    grid-area: disco-uno;
+}
+
+.album-dos {
+    grid-area: album-dos;
+}
+
+.disco-dos {
+    grid-area: disco-dos;
+}
+
+.album-tres {
+    grid-area: album-tres;
+}
+
+.disco-tres {
+    grid-area: disco-tres;
+}
+
+.album-cuatro {
+    grid-area: album-cuatro;
+}
+
+.disco-cuatro {
+    grid-area: disco-cuatro;
+}
+
+.discografia-contenedor iframe, .discografia-contenedor img {
+    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+    transition: all .5s;
+}
+
+.discografia-contenedor img:hover {
+    height: 260px;
+    width: 260px;
+}
+
+.discografia-contenedor iframe:hover {
+    height: 420px;
+    width: 310px;
+}
+
+/* -------------------------------------- */
+
+/* ESTILOS SECCIÓN GALERÍA */
+
+.galeria-contenedor {
+    margin: 120px;
+}
+
+#foto-uno, #foto-tres, #foto-cinco {
+    margin-left: 37.5%;
+}
+
+#foto-dos, #foto-cuatro, #foto-seis {
+    margin-left: 25%;
+}
+
+#carousel-prev {
+    margin-left: 25%;
+}
+
+#carousel-next {
+    margin-right: 25%
+}
+
+.galeria-videos {
+    margin: 120px;
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "uno dos"
+    "tres cuatro";
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.galeria-titulo-dos {
+    grid-area: titulo;
+}
+
+.video-uno {
+    grid-area: uno;
+}
+
+.video-dos {
+    grid-area: dos;
+}
+
+.video-tres {
+    grid-area: tres;
+}
+
+.video-cuatro {
+    grid-area: cuatro;
+}
+
+.galeria-videos iframe:hover {
+    width: 510px;
+    height: 310px;
+}
+
+/* -------------------------------------- */
+
+/* ESTILOS SECCIÓN CONTACTO */
+
+.contacto-contenedor {
+    text-align: center;
+    margin: 120px;
+    line-height: 2;
+    animation-name: aparecer;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+h3, label {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #C9D1D9;
+}
+
+.nombre, .email, .msj  {
+    width: 300px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+.enviar {
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.logos-redes {
+    margin-top: 20px;
+}
+
+.logos-redes a {
+    color: transparent;
+    margin: 20px;
+}
+
+.logos-redes a img {
+    width: 30px;
+    height: 30px;
+}
+
+.logos-redes div a:hover img {
+    width: 40px;
+    height: 40px;
+}
+
+/* -------------------------------------- */
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    #home {
+        margin-left: 10px;
+    }
+    #home, #menu-secciones a {
+        font-size: 16px;
+    }
+    #footer div .copyright {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .inicio-imagen {
+        height: 200px;
+        width: 350px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .primera-col-items, .segunda-col-items, .tercera-col-items {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    #home, #menu-secciones a {
+        font-size: 13px;
+    }
+    #footer div .copyright {
+        font-size: 13px;
+    }
+    .inicio-imagen {
+        height: 150px;
+        width: 300px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .primera-col-items, .segunda-col-items, .tercera-col-items {
+        font-size: 13px;
+    }
+    h3, label {
+        font-size: 14px;
+    }
+    .nombre, .email, .msj  {
+        width: 200px;
+    }
+    .nombre, .email {
+        height: 30px;
+    }
+    .msj {
+        height: 200px;
+    }
+    .enviar {
+        height: 40px;
+    }
+    .form {
+        font-size: 12px;
+    }
+}

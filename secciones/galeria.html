@@ -38,49 +38,53 @@
     <!----------------------------------------------->
     <!-- INICIO DE MAIN -->
     <main class="galeria-fondo">
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <h2 class="galeria-titulo-uno">GALERÍA</h2>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../img/galeria2.jpeg" class="d-block" alt="james-arthur-uno">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/galeria3.png" class="d-block" alt="james-arthur-dos">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/galeria6.jpg" class="d-block" alt="james-arthur-tres">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/about2.jpg" class="d-block" alt="james-arthur-cuatro">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <div id="carouselExampleIndicators" class="galeria-contenedor carousel slide" data-bs-ride="carousel">
+            <h2 class="galeria-titulo-uno">GALERÍA</h2>
+            <div id="carousel-botones" class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
+            <div id="galeria-fotos" class="carousel-inner">
+                <div id="foto-uno" class="carousel-item active">
+                    <img src="../img/galeria1.jpg" class="d-block w-25" alt="...">
+                </div>
+                <div id="foto-dos" class="carousel-item">
+                    <img src="../img/galeria2.jpeg" class="d-block w-50" alt="...">
+                </div>
+                <div id="foto-tres" class="carousel-item">
+                    <img src="../img/galeria4.jpeg" class="d-block w-25" alt="...">
+                </div>
+                <div id="foto-cuatro" class="carousel-item">
+                    <img src="../img/galeria3.png" class="d-block w-50" alt="...">
+                </div>
+                <div id="foto-cinco" class="carousel-item">
+                    <img src="../img/galeria5.jpg" class="d-block w-25" alt="...">
+                </div>
+                <div id="foto-seis" class="carousel-item">
+                    <img src="../img/galeria6.jpg" class="d-block w-50" alt="...">
+                </div>
+            </div>
+            <button id="carousel-prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="carousel-next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+        <section class="galeria-videos">
+            <h2 class="galeria-titulo-dos">VÍDEOS</h2>
+            <iframe class="video-uno" width="500" height="300" src="https://www.youtube.com/embed/VEZ0PFpy4dA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video-dos" width="500" height="300" src="https://www.youtube.com/embed/q4Fh-9Wl-Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video-tres" width="500" height="300" src="https://www.youtube.com/embed/mmWnvdhKJLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video-cuatro" width="500" height="300" src="https://www.youtube.com/embed/RY2WAnZ7Dcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
     </main>
-    <!----------------------------------------------->
-    <!-- </section>
-    <h2 class="galeria-titulo-dos">VÍDEOS</h2>
-    <section class="galeria-videos">
-        <iframe class="video-uno" width="500" height="300" src="https://www.youtube.com/embed/VEZ0PFpy4dA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-dos" width="500" height="300" src="https://www.youtube.com/embed/q4Fh-9Wl-Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-tres" width="500" height="300" src="https://www.youtube.com/embed/mmWnvdhKJLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-cuatro" width="500" height="300" src="https://www.youtube.com/embed/RY2WAnZ7Dcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section> -->
     <!----------------------------------------------->
     <!-- FOOTER & COPYRIGHT -->
     <footer id="footer">
