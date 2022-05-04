@@ -1,0 +1,64 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    font-family: 'Roboto Slab', serif;
+    header {
+        grid-area: header;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        background-image: radial-gradient(#222432, #171717);
+        #barra-nav {
+        margin: 5px;
+        padding: 5px;
+        background-image: radial-gradient(#222432, #171717);
+            #home {
+            margin-left: 100px;
+            }
+            
+            #boton-hamburguesa {
+                background-color: beige;
+            }
+            
+            .menu {
+                margin-right: 100px;
+                flex-grow: 0;
+            }
+            
+            #home, #menu-secciones a {
+                text-decoration: none;
+                font-family: 'Roboto Slab', serif;
+                font-size: 18px;
+                color: beige;
+                transition: all .25s;
+                &hover {
+                    color: #C9D1D9;
+                    text-decoration: underline;
+                }
+            }    
+        }
+    }
+    main {
+        grid-area: main;
+        background-image: radial-gradient(rgb(120, 120, 120), #171717);
+    }
+    #footer {
+        grid-area: footer;
+        background-image: radial-gradient(#222432, #171717);
+        div {
+            margin: 5px;
+            padding: 5px;
+            .copyright {
+                margin: 5px;
+                padding: 5px;
+                margin-left: 100px;
+                font-family: 'Roboto Slab', serif;
+                color: beige;
+            }
+        }
+    }
+}
