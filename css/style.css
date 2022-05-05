@@ -185,7 +185,7 @@ h2 {
     width: 510px;
     height: 310px; }
 
-/* ------- SECCION GALERÍA ------- */
+/* ------- SECCION CONTACTO ------- */
 .contacto-contenedor {
   text-align: center;
   margin: 120px;
@@ -193,34 +193,27 @@ h2 {
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-iteration-count: 1; }
-
-h3, label {
-  font-family: 'Roboto Slab', serif;
-  font-size: 16px;
-  color: #C9D1D9; }
-
-.nombre, .email, .msj {
-  width: 300px;
-  margin-top: 10px;
-  padding: 5px 5px;
-  border-radius: 5px;
-  line-height: 1.5; }
-
-.enviar {
-  border-radius: 5px;
-  padding: 5px 5px; }
-
-.logos-redes {
-  margin-top: 20px; }
-
-.logos-redes a {
-  color: transparent;
-  margin: 20px; }
-
-.logos-redes a img {
-  width: 30px;
-  height: 30px; }
-
-.logos-redes div a:hover img {
-  width: 40px;
-  height: 40px; }
+  .contacto-contenedor h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #C9D1D9; }
+  .contacto-contenedor .form .nombre, .contacto-contenedor .form .email, .contacto-contenedor .form .msj {
+    width: 300px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    line-height: 1.5; }
+  .contacto-contenedor .form .enviar {
+    border-radius: 5px;
+    padding: 5px 5px; }
+  .contacto-contenedor .logos-redes {
+    margin-top: 20px; }
+    .contacto-contenedor .logos-redes a {
+      color: transparent;
+      margin: 20px; }
+      .contacto-contenedor .logos-redes a img {
+        width: 30px;
+        height: 30px; }
+        .contacto-contenedor .logos-redes a img:hover {
+          width: 40px;
+          height: 40px; }
