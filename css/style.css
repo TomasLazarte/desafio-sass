@@ -111,3 +111,39 @@ h2 {
     grid-area: imagen-dos; }
   .about-contenedor .about-texto-tres {
     grid-area: texto-tres; }
+
+.discografia-contenedor {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo titulo" "album-uno disco-uno album-dos disco-dos" "album-tres disco-tres album-cuatro disco-cuatro";
+  gap: 30px;
+  margin: 120px;
+  line-height: 2; }
+  .discografia-contenedor .discografia-titulo {
+    grid-area: titulo; }
+  .discografia-contenedor .album-uno {
+    grid-area: album-uno; }
+  .discografia-contenedor .disco-uno {
+    grid-area: disco-uno; }
+  .discografia-contenedor .album-dos {
+    grid-area: album-dos; }
+  .discografia-contenedor .disco-dos {
+    grid-area: disco-dos; }
+  .discografia-contenedor .album-tres {
+    grid-area: album-tres; }
+  .discografia-contenedor .disco-tres {
+    grid-area: disco-tres; }
+  .discografia-contenedor .album-cuatro {
+    grid-area: album-cuatro; }
+  .discografia-contenedor .disco-cuatro {
+    grid-area: disco-cuatro; }
+  .discografia-contenedor img, .discografia-contenedor iframe {
+    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+    transition: all .5s; }
+  .discografia-contenedor img:hover {
+    height: 260px;
+    width: 260px; }
+  .discografia-contenedor iframe:hover {
+    height: 420px;
+    width: 310px; }

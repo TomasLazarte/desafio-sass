@@ -1,0 +1,59 @@
+.discografia-contenedor {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "album-uno disco-uno album-dos disco-dos"
+    "album-tres disco-tres album-cuatro disco-cuatro";
+    gap: 30px;
+    margin: 120px;
+    line-height: 2;
+    .discografia-titulo {
+        grid-area: titulo;
+    }
+    
+    .album-uno {
+        grid-area: album-uno;
+    }
+    
+    .disco-uno {
+        grid-area: disco-uno;
+    }
+    
+    .album-dos {
+        grid-area: album-dos;
+    }
+    
+    .disco-dos {
+        grid-area: disco-dos;
+    }
+    
+    .album-tres {
+        grid-area: album-tres;
+    }
+    
+    .disco-tres {
+        grid-area: disco-tres;
+    }
+    
+    .album-cuatro {
+        grid-area: album-cuatro;
+    }
+    
+    .disco-cuatro {
+        grid-area: disco-cuatro;
+    }
+    img, iframe {
+        border-radius: 20px;
+        height: 250px;
+        width: 250px;
+        transition: all .5s;
+    }
+    img:hover {
+        height: 260px;
+        width: 260px;
+    }
+    iframe:hover {
+        height: 420px;
+        width: 310px;
+    }
+}
