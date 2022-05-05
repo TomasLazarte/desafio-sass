@@ -55,3 +55,59 @@ h2 {
   font-family: 'Roboto Slab', serif;
   font-size: 30px;
   color: #C9D1D9; }
+
+.inicio-contenedor {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center; }
+  .inicio-contenedor .inicio-imagen, .inicio-contenedor .inicio-titulo, .inicio-contenedor .inicio-tour {
+    animation-name: aparecer;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1; }
+  .inicio-contenedor .inicio-titulo {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .inicio-contenedor .inicio-tour {
+    display: flex;
+    justify-content: space-evenly; }
+    .inicio-contenedor .inicio-tour .primera-col, .inicio-contenedor .inicio-tour .segunda-col, .inicio-contenedor .inicio-tour .tercera-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .inicio-contenedor .inicio-tour .primera-col-items, .inicio-contenedor .inicio-tour .segunda-col-items, .inicio-contenedor .inicio-tour .tercera-col-items {
+      font-size: 18px;
+      color: #C9D1D9;
+      background-color: #222432;
+      border-radius: 10px;
+      border: solid #171717 3px;
+      width: 100%;
+      margin: 5px;
+      transition: all .25s; }
+      .inicio-contenedor .inicio-tour .primera-col-items:hover, .inicio-contenedor .inicio-tour .segunda-col-items:hover, .inicio-contenedor .inicio-tour .tercera-col-items:hover {
+        color: beige;
+        font-size: 19px; }
+
+.about-contenedor {
+  display: grid;
+  grid-template-areas: "titulo titulo" "texto-uno imagen-uno" "texto-dos imagen-uno" "imagen-dos texto-tres";
+  gap: 15px;
+  font-family: 'Roboto Slab', serif;
+  color: beige;
+  margin: 120px;
+  line-height: 2;
+  font-size: 16px; }
+  .about-contenedor .about-titulo {
+    grid-area: titulo; }
+  .about-contenedor .about-texto-uno {
+    grid-area: texto-uno;
+    text-shadow: black; }
+  .about-contenedor .about-texto-dos {
+    grid-area: texto-dos;
+    text-shadow: black; }
+  .about-contenedor .about-img-uno {
+    grid-area: imagen-uno;
+    height: 600px; }
+  .about-contenedor .about-img-dos {
+    grid-area: imagen-dos; }
+  .about-contenedor .about-texto-tres {
+    grid-area: texto-tres; }

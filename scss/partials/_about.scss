@@ -1,0 +1,40 @@
+.about-contenedor {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "texto-uno imagen-uno"
+    "texto-dos imagen-uno"
+    "imagen-dos texto-tres";
+    gap: 15px;
+    font-family: 'Roboto Slab', serif;
+    color: beige;
+    margin: 120px;
+    line-height: 2;
+    font-size: 16px;
+    .about-titulo {
+        grid-area: titulo;
+    }
+    
+    .about-texto-uno {
+        grid-area: texto-uno;
+        text-shadow: black;
+    }
+    
+    .about-texto-dos {
+        grid-area: texto-dos;
+        text-shadow: black;
+    }
+    
+    .about-img-uno {
+        grid-area: imagen-uno;
+        height: 600px;
+    }
+    
+    .about-img-dos {
+        grid-area: imagen-dos;
+    }
+    
+    .about-texto-tres {
+        grid-area: texto-tres;
+    }
+}

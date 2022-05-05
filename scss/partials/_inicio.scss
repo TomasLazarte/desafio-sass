@@ -1,0 +1,37 @@
+.inicio-contenedor {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    .inicio-imagen, .inicio-titulo, .inicio-tour {
+        animation-name: aparecer;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+    .inicio-titulo {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .inicio-tour {
+        display: flex;
+        justify-content: space-evenly;
+        .primera-col, .segunda-col, .tercera-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        .primera-col-items, .segunda-col-items, .tercera-col-items {
+            font-size: 18px;
+            color: #C9D1D9;
+            background-color: #222432;
+            border-radius: 10px;
+            border: solid #171717 3px;
+            width: 100%;
+            margin: 5px;
+            transition: all .25s;
+            &:hover {
+                color: beige;
+                font-size: 19px;
+            }   
+        }
+    }
+}
