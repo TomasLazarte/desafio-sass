@@ -217,3 +217,63 @@ h2 {
         .contacto-contenedor .logos-redes a img:hover {
           width: 40px;
           height: 40px; }
+
+/* ------- ANIMACIONES ------- */
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* ------- RESPONSIVE ------- */
+@media screen and (max-width: 725px) {
+  body header #barra-nav #home {
+    margin-left: 10px;
+    font-size: 16px; }
+  body header #barra-nav #menu-secciones a {
+    font-size: 16px; }
+  body .inicio-contenedor .inicio-imagen {
+    height: 200px;
+    width: 350px; }
+  body .inicio-contenedor .inicio-tour .primera-col-items {
+    font-size: 16px; }
+  body .inicio-contenedor .inicio-tour .segunda-col-items {
+    font-size: 16px; }
+  body .inicio-contenedor .inicio-tour .tercera-col-items {
+    font-size: 16px; }
+  body #footer div .copyright {
+    margin-left: 10px;
+    font-size: 16px; }
+  body h2 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 400px) {
+  body header #barra-nav #home {
+    font-size: 13px; }
+  body header #barra-nav #menu-secciones a {
+    font-size: 13px; }
+  body .inicio-contenedor .inicio-imagen {
+    height: 150px;
+    width: 300px; }
+  body .inicio-contenedor .inicio-tour .primera-col-items {
+    font-size: 13px; }
+  body .inicio-contenedor .inicio-tour .segunda-col-items {
+    font-size: 13px; }
+  body .inicio-contenedor .inicio-tour .tercera-col-items {
+    font-size: 13px; }
+  body #footer div .copyright {
+    font-size: 13px; }
+  body h2 {
+    font-size: 15px; }
+  body h3 {
+    font-size: 14px; }
+  body .nombre, body .email, body .msj {
+    width: 200px; }
+  body .nombre, body .email {
+    height: 30px; }
+  body .msj {
+    height: 200px; }
+  body .enviar {
+    height: 40px; }
+  body .form {
+    font-size: 12px; } }
