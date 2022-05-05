@@ -60,7 +60,7 @@ h2 {
 
 /* ------- SECCION INICIO ------- */
 .inicio-contenedor {
-  margin-top: 100px;
+  margin: 120px;
   margin-bottom: 50px;
   text-align: center; }
   .inicio-contenedor .inicio-imagen, .inicio-contenedor .inicio-titulo, .inicio-contenedor .inicio-tour {

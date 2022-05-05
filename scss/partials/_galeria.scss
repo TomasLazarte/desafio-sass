@@ -1,7 +1,9 @@
 /* ------- SECCION GALERÍA ------- */
+@import "../variables/variables";
+
 
 .galeria-imagenes {
-    margin: 120px;
+    margin: $margen;
     #foto-uno, #foto-tres, #foto-cinco {
         margin-left: 37.5%;
     }

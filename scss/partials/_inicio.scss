@@ -1,7 +1,9 @@
 /* ------- SECCION INICIO ------- */
+@import "../variables/variables";
+
 
 .inicio-contenedor {
-    margin-top: 100px;
+    margin: $margen;
     margin-bottom: 50px;
     text-align: center;
     .inicio-imagen, .inicio-titulo, .inicio-tour {

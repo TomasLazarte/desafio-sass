@@ -1,8 +1,10 @@
 /* ------- SECCION CONTACTO ------- */
+@import "../variables/variables";
+
 
 .contacto-contenedor {
     text-align: center;
-    margin: 120px;
+    margin: $margen;
     line-height: 2;
     animation-name: aparecer;
     animation-duration: 1.5s;

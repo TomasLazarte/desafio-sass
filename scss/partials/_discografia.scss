@@ -1,4 +1,6 @@
 /* ------- SECCION DISCOGRAFÍA ------- */
+@import "../variables/variables";
+
 
 .discografia-contenedor {
     display: grid;
@@ -7,7 +9,7 @@
     "album-uno disco-uno album-dos disco-dos"
     "album-tres disco-tres album-cuatro disco-cuatro";
     gap: 30px;
-    margin: 120px;
+    margin: $margen;
     line-height: 2;
     .discografia-titulo {
         grid-area: titulo;
