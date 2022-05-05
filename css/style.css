@@ -32,7 +32,7 @@ body {
         font-size: 18px;
         color: beige;
         transition: all .25s; }
-        body header #barra-nav #homehover, body header #barra-nav #menu-secciones ahover {
+        body header #barra-nav #home:hover, body header #barra-nav #menu-secciones a:hover {
           color: #C9D1D9;
           text-decoration: underline; }
   body main {
@@ -50,3 +50,8 @@ body {
         margin-left: 100px;
         font-family: 'Roboto Slab', serif;
         color: beige; }
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  color: #C9D1D9; }
