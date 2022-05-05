@@ -1,0 +1,54 @@
+/* ------- SECCION GALERÍA ------- */
+
+.galeria-imagenes {
+    margin: 120px;
+    #foto-uno, #foto-tres, #foto-cinco {
+        margin-left: 37.5%;
+    }
+    
+    #foto-dos, #foto-cuatro, #foto-seis {
+        margin-left: 25%;
+    }
+    #carousel-prev {
+        margin-left: 25%;
+    }
+    
+    #carousel-next {
+        margin-right: 25%
+    }
+}
+
+.galeria-videos {
+    margin: 120px;
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "uno dos"
+    "tres cuatro";
+    gap: 20px;
+    margin-top: 30px;
+    .galeria-titulo-dos {
+        grid-area: titulo;
+    }
+    
+    .video-uno {
+        grid-area: uno;
+    }
+    
+    .video-dos {
+        grid-area: dos;
+    }
+    
+    .video-tres {
+        grid-area: tres;
+    }
+    
+    .video-cuatro {
+        grid-area: cuatro;
+    }
+    
+    iframe:hover {
+        width: 510px;
+        height: 310px;
+    }
+}
