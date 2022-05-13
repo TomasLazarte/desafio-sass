@@ -3,7 +3,8 @@
 
 
 .galeria-imagenes {
-    margin: $margen;
+    margin-left: 100px;
+    margin-right: 100px;
     #foto-uno, #foto-tres, #foto-cinco {
         margin-left: 37.5%;
     }
@@ -21,14 +22,15 @@
 }
 
 .galeria-videos {
-    margin: 120px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
     display: grid;
     grid-template-areas:
     "titulo titulo"
     "uno dos"
     "tres cuatro";
     gap: 20px;
-    margin-top: 30px;
     .galeria-titulo-dos {
         grid-area: titulo;
     }
@@ -52,5 +54,46 @@
     iframe:hover {
         width: 510px;
         height: 310px;
+    }
+}
+
+@media (max-width: 1225px){
+    .galeria-titulo-uno{
+        text-align: center;
+    }
+
+    .galeria-videos {
+        justify-content: center;
+        text-align: center;
+        grid-template-areas:
+        "titulo"
+        "uno"
+        "dos"
+        "tres"
+        "cuatro";
+        gap: 15px;
+        .galeria-titulo-dos {
+            grid-area: titulo;
+        }
+        
+        .video-uno {
+            grid-area: uno;
+            width: 300px;
+        }
+        
+        .video-dos {
+            grid-area: dos;
+            width: 300px;
+        }
+        
+        .video-tres {
+            grid-area: tres;
+            width: 300px;
+        }
+        
+        .video-cuatro {
+            grid-area: cuatro;
+            width: 300px;
+        }
     }
 }

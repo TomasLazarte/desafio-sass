@@ -1,72 +1,108 @@
 /* ------- ESTILOS GENERALES ------- */
 
+@import "../variables/variables";
+
 body {
-    display: grid;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-    font-family: 'Roboto Slab', serif;
     header {
-        grid-area: header;
+        height: 60px;
         position: fixed;
         right: 0;
         left: 0;
         top: 0;
         background-image: radial-gradient(#222432, #171717);
         #barra-nav {
-        margin: 5px;
-        padding: 5px;
-        background-image: radial-gradient(#222432, #171717);
-            #home {
-            margin-left: 100px;
-            }
-            
-            #boton-hamburguesa {
-                background-color: beige;
-            }
-            
-            .menu {
-                margin-right: 100px;
-                flex-grow: 0;
-            }
-            
-            #home, #menu-secciones a {
-                text-decoration: none;
-                font-family: 'Roboto Slab', serif;
-                font-size: 18px;
-                color: beige;
-                transition: all .25s;
-                &:hover {
-                    color: #C9D1D9;
-                    text-decoration: underline;
+            background-image: radial-gradient(#222432, #171717);
+            #contenedor-nav{
+            padding: 0rem;
+                #home {
+                    margin-left: 100px;
+                    text-decoration: none;
+                    font-family: $fuente;
+                    font-size: 18px;
+                    color: beige;
                 }
-            }    
+                
+                #boton-hamburguesa {
+                    background-color: beige;
+                    margin-right: 20px;
+                }
+                
+                .menu {
+                    margin-right: 100px;
+                    flex-grow: 0;
+                    #menu-secciones a {
+                        text-decoration: none;
+                        font-family: $fuente;
+                        font-size: 18px;
+                        color: beige;
+                        transition: all .25s;
+                        &:hover {
+                            color: #C9D1D9;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }        
         }
-    }
+    }    
     main {
-        grid-area: main;
         background-image: radial-gradient(rgb(120, 120, 120), #171717);
+        margin-top: 60px;
     }
     #footer {
-        grid-area: footer;
+        height: 60px;
         background-image: radial-gradient(#222432, #171717);
-        div {
-            margin: 5px;
-            padding: 5px;
-            .copyright {
-                margin: 5px;
-                padding: 5px;
-                margin-left: 100px;
-                font-family: 'Roboto Slab', serif;
-                color: beige;
-            }
+        display: flex;
+        align-items: center;
+        div p    {
+            margin: 0px;
+            margin-left: 100px;
+            font-family: $fuente;
+            color: beige;
         }
     }
 }
 
 h2 {
-    font-family: 'Roboto Slab', serif;
+    font-family: $fuente;
     font-size: 30px;
     color: #C9D1D9;
+}
+
+
+@media (max-width: 725px){
+    // no me toma ni el home
+    // ni las secciones
+    #home {
+        margin-left: 20px;
+        font-size: 16px
+    }
+    #menu-secciones a {
+        font-size: 16px;
+    }
+    #footer div .copyright {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 20px;
+    }  
+}
+
+
+@media (max-width: 400px) {
+    // no me toma ni el home
+    // ni las secciones
+    #home {
+        font-size: 13px;
+    }
+    #menu-secciones a {
+        font-size: 13px;
+    }
+    #footer div .copyright {
+        font-size: 13px;
+    }     
+    h2 {
+        font-size: 15px;
+    }
 }

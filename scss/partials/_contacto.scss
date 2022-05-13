@@ -5,13 +5,12 @@
 
 .contacto-contenedor {
     text-align: center;
-    margin: $margen;
     line-height: 2;
     animation-name: aparecer;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
     h3 {
-        font-family: 'Roboto Slab', serif;
+        font-family: $fuente;
         font-size: 16px;
         color: #C9D1D9;
     }
@@ -24,6 +23,7 @@
             line-height: 1.5;
         }
         .enviar {
+            font-family: $fuente;
             border-radius: 5px;
             padding: 5px 5px;
         }
@@ -42,5 +42,26 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 400px){
+    h3 {
+        font-size: 14px;
+    }
+    .nombre, .email, .msj  {
+        width: 200px;
+    }
+    .nombre, .email {
+        height: 30px;
+    }
+    .msj {
+        height: 200px;
+    }
+    .enviar {
+        height: 40px;
+    }
+    .form {
+        font-size: 12px;
     }
 }

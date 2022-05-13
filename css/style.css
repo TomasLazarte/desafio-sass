@@ -1,78 +1,97 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; }
 
 /* ------- ESTILOS GENERALES ------- */
-body {
-  display: grid;
-  grid-template-areas: "header" "main" "footer";
-  font-family: 'Roboto Slab', serif; }
-  body header {
-    grid-area: header;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
+body header {
+  height: 60px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-image: radial-gradient(#222432, #171717); }
+  body header #barra-nav {
     background-image: radial-gradient(#222432, #171717); }
-    body header #barra-nav {
-      margin: 5px;
-      padding: 5px;
-      background-image: radial-gradient(#222432, #171717); }
-      body header #barra-nav #home {
-        margin-left: 100px; }
-      body header #barra-nav #boton-hamburguesa {
-        background-color: beige; }
-      body header #barra-nav .menu {
+    body header #barra-nav #contenedor-nav {
+      padding: 0rem; }
+      body header #barra-nav #contenedor-nav #home {
+        margin-left: 100px;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        color: beige; }
+      body header #barra-nav #contenedor-nav #boton-hamburguesa {
+        background-color: beige;
+        margin-right: 20px; }
+      body header #barra-nav #contenedor-nav .menu {
         margin-right: 100px;
         flex-grow: 0; }
-      body header #barra-nav #home, body header #barra-nav #menu-secciones a {
-        text-decoration: none;
-        font-family: 'Roboto Slab', serif;
-        font-size: 18px;
-        color: beige;
-        transition: all .25s; }
-        body header #barra-nav #home:hover, body header #barra-nav #menu-secciones a:hover {
-          color: #C9D1D9;
-          text-decoration: underline; }
-  body main {
-    grid-area: main;
-    background-image: radial-gradient(#787878, #171717); }
-  body #footer {
-    grid-area: footer;
-    background-image: radial-gradient(#222432, #171717); }
-    body #footer div {
-      margin: 5px;
-      padding: 5px; }
-      body #footer div .copyright {
-        margin: 5px;
-        padding: 5px;
-        margin-left: 100px;
-        font-family: 'Roboto Slab', serif;
-        color: beige; }
+        body header #barra-nav #contenedor-nav .menu #menu-secciones a {
+          text-decoration: none;
+          font-family: "Montserrat", sans-serif;
+          font-size: 18px;
+          color: beige;
+          transition: all .25s; }
+          body header #barra-nav #contenedor-nav .menu #menu-secciones a:hover {
+            color: #C9D1D9;
+            text-decoration: underline; }
+
+body main {
+  background-image: radial-gradient(#787878, #171717);
+  margin-top: 60px; }
+
+body #footer {
+  height: 60px;
+  background-image: radial-gradient(#222432, #171717);
+  display: flex;
+  align-items: center; }
+  body #footer div p {
+    margin: 0px;
+    margin-left: 100px;
+    font-family: "Montserrat", sans-serif;
+    color: beige; }
 
 h2 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   color: #C9D1D9; }
 
+@media (max-width: 725px) {
+  #home {
+    margin-left: 20px;
+    font-size: 16px; }
+  #menu-secciones a {
+    font-size: 16px; }
+  #footer div .copyright {
+    margin-left: 20px;
+    font-size: 16px; }
+  h2 {
+    font-size: 20px; } }
+
+@media (max-width: 400px) {
+  #home {
+    font-size: 13px; }
+  #menu-secciones a {
+    font-size: 13px; }
+  #footer div .copyright {
+    font-size: 13px; }
+  h2 {
+    font-size: 15px; } }
+
 /* ------- SECCION INICIO ------- */
 .inicio-contenedor {
-  margin: 120px;
-  margin-bottom: 50px;
   text-align: center; }
   .inicio-contenedor .inicio-imagen, .inicio-contenedor .inicio-titulo, .inicio-contenedor .inicio-tour {
     animation-name: aparecer;
     animation-duration: 1.5s;
     animation-iteration-count: 1; }
-  .inicio-contenedor .inicio-titulo {
-    margin-top: 50px;
-    margin-bottom: 50px; }
   .inicio-contenedor .inicio-tour {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif; }
     .inicio-contenedor .inicio-tour .primera-col, .inicio-contenedor .inicio-tour .segunda-col, .inicio-contenedor .inicio-tour .tercera-col {
       display: flex;
       flex-direction: column;
@@ -90,38 +109,112 @@ h2 {
         color: beige;
         font-size: 19px; }
 
+@media (max-width: 725px) {
+  .inicio-contenedor .inicio-imagen {
+    height: 200px;
+    width: 350px; }
+  .inicio-contenedor .inicio-tour .primera-col-items {
+    font-size: 16px; }
+  .inicio-contenedor .inicio-tour .segunda-col-items {
+    font-size: 16px; }
+  .inicio-contenedor .inicio-tour .tercera-col-items {
+    font-size: 16px; } }
+
+@media (max-width: 400px) {
+  .inicio-contenedor .inicio-imagen {
+    height: 150px;
+    width: 300px; }
+  .inicio-contenedor .inicio-tour .primera-col-items {
+    font-size: 13px; }
+  .inicio-contenedor .inicio-tour .segunda-col-items {
+    font-size: 13px; }
+  .inicio-contenedor .inicio-tour .tercera-col-items {
+    font-size: 13px; } }
+
 /* ------- SECCION ABOUT ------- */
 .about-contenedor {
+  margin-left: 100px;
+  margin-right: 100px;
   display: grid;
   grid-template-areas: "titulo titulo" "texto-uno imagen-uno" "texto-dos imagen-uno" "imagen-dos texto-tres";
   gap: 15px;
-  font-family: 'Roboto Slab', serif;
-  color: beige;
-  margin: 120px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
   line-height: 2;
-  font-size: 16px; }
+  font-size: 16px;
+  align-items: center; }
   .about-contenedor .about-titulo {
     grid-area: titulo; }
   .about-contenedor .about-texto-uno {
     grid-area: texto-uno;
-    text-shadow: black; }
+    background-color: #222432;
+    text-align: center;
+    border: solid 2px #171717; }
   .about-contenedor .about-texto-dos {
     grid-area: texto-dos;
-    text-shadow: black; }
+    background-color: #222432;
+    text-align: center;
+    border: solid 2px #171717; }
   .about-contenedor .about-img-uno {
     grid-area: imagen-uno;
-    height: 600px; }
+    height: 400px;
+    width: 300px; }
   .about-contenedor .about-img-dos {
-    grid-area: imagen-dos; }
+    grid-area: imagen-dos;
+    height: 300px;
+    width: 500px; }
   .about-contenedor .about-texto-tres {
-    grid-area: texto-tres; }
+    grid-area: texto-tres;
+    background-color: #222432;
+    text-align: center;
+    border: solid 2px #171717; }
+
+@media (max-width: 975px) {
+  .about-contenedor {
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-template-areas: "titulo" "texto-uno" "imagen-uno" "texto-dos" "imagen-dos" "texto-tres";
+    gap: 10px;
+    font-size: 13px;
+    justify-items: center;
+    align-items: center; }
+    .about-contenedor .about-titulo {
+      grid-area: titulo; }
+    .about-contenedor .about-texto-uno {
+      grid-area: texto-uno; }
+    .about-contenedor .about-texto-dos {
+      grid-area: texto-dos; }
+    .about-contenedor .about-img-uno {
+      grid-area: imagen-uno;
+      height: 350px;
+      width: 275px; }
+    .about-contenedor .about-img-dos {
+      grid-area: imagen-dos;
+      height: 250px;
+      width: 400px; }
+    .about-contenedor .about-texto-tres {
+      grid-area: texto-tres; } }
+
+@media (max-width: 500px) {
+  .about-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px; }
+    .about-contenedor .about-img-uno {
+      height: 300px;
+      width: 250px; }
+    .about-contenedor .about-img-dos {
+      height: 225px;
+      width: 300px; } }
 
 /* ------- SECCION DISCOGRAFÍA ------- */
 .discografia-contenedor {
+  margin-left: 100px;
+  margin-right: 100px;
   display: grid;
   grid-template-areas: "titulo titulo titulo titulo" "album-uno disco-uno album-dos disco-dos" "album-tres disco-tres album-cuatro disco-cuatro";
   gap: 30px;
-  margin: 120px;
   line-height: 2; }
   .discografia-contenedor .discografia-titulo {
     grid-area: titulo; }
@@ -153,9 +246,81 @@ h2 {
     height: 420px;
     width: 310px; }
 
+@media (max-width: 1225px) {
+  .discografia-contenedor {
+    justify-content: center;
+    grid-template-areas: "titulo titulo" "album-uno disco-uno" "album-dos disco-dos" "album-tres disco-tres" "album-cuatro disco-cuatro";
+    gap: 20px;
+    line-height: 2; }
+    .discografia-contenedor .discografia-titulo {
+      grid-area: titulo; }
+    .discografia-contenedor .album-uno {
+      grid-area: album-uno; }
+    .discografia-contenedor .disco-uno {
+      grid-area: disco-uno; }
+    .discografia-contenedor .album-dos {
+      grid-area: album-dos; }
+    .discografia-contenedor .disco-dos {
+      grid-area: disco-dos; }
+    .discografia-contenedor .album-tres {
+      grid-area: album-tres; }
+    .discografia-contenedor .disco-tres {
+      grid-area: disco-tres; }
+    .discografia-contenedor .album-cuatro {
+      grid-area: album-cuatro; }
+    .discografia-contenedor .disco-cuatro {
+      grid-area: disco-cuatro; }
+    .discografia-contenedor img, .discografia-contenedor iframe {
+      border-radius: 20px;
+      height: 225px;
+      width: 225px;
+      transition: all .5s; }
+    .discografia-contenedor img:hover {
+      height: 240px;
+      width: 240px; }
+    .discografia-contenedor iframe:hover {
+      height: 300px;
+      width: 280px; } }
+
+@media (max-width: 575px) {
+  .discografia-contenedor {
+    grid-template-areas: "titulo" "album-uno" "disco-uno" "album-dos" "disco-dos" "album-tres" "disco-tres" "album-cuatro" "disco-cuatro";
+    gap: 15px;
+    line-height: 2; }
+    .discografia-contenedor .discografia-titulo {
+      grid-area: titulo; }
+    .discografia-contenedor .album-uno {
+      grid-area: album-uno; }
+    .discografia-contenedor .disco-uno {
+      grid-area: disco-uno; }
+    .discografia-contenedor .album-dos {
+      grid-area: album-dos; }
+    .discografia-contenedor .disco-dos {
+      grid-area: disco-dos; }
+    .discografia-contenedor .album-tres {
+      grid-area: album-tres; }
+    .discografia-contenedor .disco-tres {
+      grid-area: disco-tres; }
+    .discografia-contenedor .album-cuatro {
+      grid-area: album-cuatro; }
+    .discografia-contenedor .disco-cuatro {
+      grid-area: disco-cuatro; }
+    .discografia-contenedor img, .discografia-contenedor iframe {
+      border-radius: 20px;
+      height: 200px;
+      width: 200px;
+      transition: all .5s; }
+    .discografia-contenedor img:hover {
+      height: 200px;
+      width: 200px; }
+    .discografia-contenedor iframe:hover {
+      height: 210px;
+      width: 220px; } }
+
 /* ------- SECCION GALERÍA ------- */
 .galeria-imagenes {
-  margin: 120px; }
+  margin-left: 100px;
+  margin-right: 100px; }
   .galeria-imagenes #foto-uno, .galeria-imagenes #foto-tres, .galeria-imagenes #foto-cinco {
     margin-left: 37.5%; }
   .galeria-imagenes #foto-dos, .galeria-imagenes #foto-cuatro, .galeria-imagenes #foto-seis {
@@ -166,11 +331,12 @@ h2 {
     margin-right: 25%; }
 
 .galeria-videos {
-  margin: 120px;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
   display: grid;
   grid-template-areas: "titulo titulo" "uno dos" "tres cuatro";
-  gap: 20px;
-  margin-top: 30px; }
+  gap: 20px; }
   .galeria-videos .galeria-titulo-dos {
     grid-area: titulo; }
   .galeria-videos .video-uno {
@@ -185,16 +351,38 @@ h2 {
     width: 510px;
     height: 310px; }
 
+@media (max-width: 1225px) {
+  .galeria-titulo-uno {
+    text-align: center; }
+  .galeria-videos {
+    justify-content: center;
+    text-align: center;
+    grid-template-areas: "titulo" "uno" "dos" "tres" "cuatro";
+    gap: 15px; }
+    .galeria-videos .galeria-titulo-dos {
+      grid-area: titulo; }
+    .galeria-videos .video-uno {
+      grid-area: uno;
+      width: 300px; }
+    .galeria-videos .video-dos {
+      grid-area: dos;
+      width: 300px; }
+    .galeria-videos .video-tres {
+      grid-area: tres;
+      width: 300px; }
+    .galeria-videos .video-cuatro {
+      grid-area: cuatro;
+      width: 300px; } }
+
 /* ------- SECCION CONTACTO ------- */
 .contacto-contenedor {
   text-align: center;
-  margin: 120px;
   line-height: 2;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-iteration-count: 1; }
   .contacto-contenedor h3 {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     color: #C9D1D9; }
   .contacto-contenedor .form .nombre, .contacto-contenedor .form .email, .contacto-contenedor .form .msj {
@@ -204,6 +392,7 @@ h2 {
     border-radius: 5px;
     line-height: 1.5; }
   .contacto-contenedor .form .enviar {
+    font-family: "Montserrat", sans-serif;
     border-radius: 5px;
     padding: 5px 5px; }
   .contacto-contenedor .logos-redes {
@@ -218,6 +407,20 @@ h2 {
           width: 40px;
           height: 40px; }
 
+@media (max-width: 400px) {
+  h3 {
+    font-size: 14px; }
+  .nombre, .email, .msj {
+    width: 200px; }
+  .nombre, .email {
+    height: 30px; }
+  .msj {
+    height: 200px; }
+  .enviar {
+    height: 40px; }
+  .form {
+    font-size: 12px; } }
+
 /* ------- ANIMACIONES ------- */
 @keyframes aparecer {
   0% {
@@ -226,54 +429,3 @@ h2 {
     opacity: 1; } }
 
 /* ------- RESPONSIVE ------- */
-@media screen and (max-width: 725px) {
-  body header #barra-nav #home {
-    margin-left: 10px;
-    font-size: 16px; }
-  body header #barra-nav #menu-secciones a {
-    font-size: 16px; }
-  body .inicio-contenedor .inicio-imagen {
-    height: 200px;
-    width: 350px; }
-  body .inicio-contenedor .inicio-tour .primera-col-items {
-    font-size: 16px; }
-  body .inicio-contenedor .inicio-tour .segunda-col-items {
-    font-size: 16px; }
-  body .inicio-contenedor .inicio-tour .tercera-col-items {
-    font-size: 16px; }
-  body #footer div .copyright {
-    margin-left: 10px;
-    font-size: 16px; }
-  body h2 {
-    font-size: 20px; } }
-
-@media screen and (max-width: 400px) {
-  body header #barra-nav #home {
-    font-size: 13px; }
-  body header #barra-nav #menu-secciones a {
-    font-size: 13px; }
-  body .inicio-contenedor .inicio-imagen {
-    height: 150px;
-    width: 300px; }
-  body .inicio-contenedor .inicio-tour .primera-col-items {
-    font-size: 13px; }
-  body .inicio-contenedor .inicio-tour .segunda-col-items {
-    font-size: 13px; }
-  body .inicio-contenedor .inicio-tour .tercera-col-items {
-    font-size: 13px; }
-  body #footer div .copyright {
-    font-size: 13px; }
-  body h2 {
-    font-size: 15px; }
-  body h3 {
-    font-size: 14px; }
-  body .nombre, body .email, body .msj {
-    width: 200px; }
-  body .nombre, body .email {
-    height: 30px; }
-  body .msj {
-    height: 200px; }
-  body .enviar {
-    height: 40px; }
-  body .form {
-    font-size: 12px; } }
