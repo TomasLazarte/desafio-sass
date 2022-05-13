@@ -6,7 +6,7 @@
   box-sizing: border-box; }
 
 /* ------- ESTILOS GENERALES ------- */
-.header-footer, body header, body header #barra-nav, body #footer {
+.header-footer, body header, body #footer {
   height: 60px;
   background-image: radial-gradient(#222432, #171717); }
 
@@ -15,29 +15,31 @@ body header {
   right: 0;
   left: 0;
   top: 0; }
-  body header #barra-nav #contenedor-nav {
-    padding: 0rem; }
-    body header #barra-nav #contenedor-nav #home {
-      margin-left: 100px;
-      font-size: 18px;
-      text-decoration: none;
-      font-family: "Montserrat", sans-serif;
-      color: beige; }
-    body header #barra-nav #contenedor-nav #boton-hamburguesa {
-      background-color: beige;
-      margin-right: 20px; }
-    body header #barra-nav #contenedor-nav .menu {
-      margin-right: 100px;
-      flex-grow: 0; }
-      body header #barra-nav #contenedor-nav .menu #menu-secciones a {
+  body header #barra-nav {
+    background-image: radial-gradient(#222432, #171717); }
+    body header #barra-nav #contenedor-nav {
+      padding: 0rem; }
+      body header #barra-nav #contenedor-nav #home {
+        margin-left: 100px;
         font-size: 18px;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
-        color: beige;
-        transition: all .25s; }
-        body header #barra-nav #contenedor-nav .menu #menu-secciones a:hover {
-          color: #C9D1D9;
-          text-decoration: underline; }
+        color: beige; }
+      body header #barra-nav #contenedor-nav #boton-hamburguesa {
+        background-color: beige;
+        margin-right: 20px; }
+      body header #barra-nav #contenedor-nav .menu {
+        margin-right: 100px;
+        flex-grow: 0; }
+        body header #barra-nav #contenedor-nav .menu #menu-secciones a {
+          font-size: 18px;
+          text-decoration: none;
+          font-family: "Montserrat", sans-serif;
+          color: beige;
+          transition: all .25s; }
+          body header #barra-nav #contenedor-nav .menu #menu-secciones a:hover {
+            color: #C9D1D9;
+            text-decoration: underline; }
 
 body main {
   background-image: radial-gradient(#787878, #171717);
@@ -81,7 +83,7 @@ h2 {
     font-size: 15px; } }
 
 /* ------- SECCION INICIO ------- */
-.header-footer, body header, body header #barra-nav, body #footer {
+.header-footer, body header, body #footer {
   height: 60px;
   background-image: radial-gradient(#222432, #171717); }
 
@@ -135,7 +137,7 @@ h2 {
     font-size: 13px; } }
 
 /* ------- SECCION ABOUT ------- */
-.header-footer, body header, body header #barra-nav, body #footer {
+.header-footer, body header, body #footer {
   height: 60px;
   background-image: radial-gradient(#222432, #171717); }
 
@@ -216,7 +218,7 @@ h2 {
       width: 300px; } }
 
 /* ------- SECCION DISCOGRAFÍA ------- */
-.header-footer, body header, body header #barra-nav, body #footer {
+.header-footer, body header, body #footer {
   height: 60px;
   background-image: radial-gradient(#222432, #171717); }
 
@@ -329,7 +331,7 @@ h2 {
       width: 220px; } }
 
 /* ------- SECCION GALERÍA ------- */
-.header-footer, body header, body header #barra-nav, body #footer {
+.header-footer, body header, body #footer {
   height: 60px;
   background-image: radial-gradient(#222432, #171717); }
 
@@ -390,7 +392,7 @@ h2 {
       width: 300px; } }
 
 /* ------- SECCION CONTACTO ------- */
-.header-footer, body header, body header #barra-nav, body #footer {
+.header-footer, body header, body #footer {
   height: 60px;
   background-image: radial-gradient(#222432, #171717); }
 
@@ -447,6 +449,6 @@ h2 {
   100% {
     opacity: 1; } }
 
-.header-footer, body header, body header #barra-nav, body #footer {
+.header-footer, body header, body #footer {
   height: 60px;
   background-image: radial-gradient(#222432, #171717); }
