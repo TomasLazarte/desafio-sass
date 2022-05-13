@@ -5,8 +5,7 @@
 
 
 .about-contenedor {
-    margin-left: 100px;
-    margin-right: 100px;
+    @include margen-main;
     display: grid;
     grid-template-areas:
     "titulo titulo"
@@ -25,16 +24,12 @@
     
     .about-texto-uno {
         grid-area: texto-uno;
-        background-color: #222432;
-        text-align: center;
-        border: solid 2px #171717;
+        @include estilo-texto-about;
     }
     
     .about-texto-dos {
         grid-area: texto-dos;
-        background-color: #222432;
-        text-align: center;
-        border: solid 2px #171717;
+        @include estilo-texto-about;
     }
     
     .about-img-uno {
@@ -51,9 +46,7 @@
     
     .about-texto-tres {
         grid-area: texto-tres;
-        background-color: #222432;
-        text-align: center;
-        border: solid 2px #171717;
+        @include estilo-texto-about;
     }
 }
 

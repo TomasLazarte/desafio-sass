@@ -5,8 +5,7 @@
 
 
 .discografia-contenedor {
-    margin-left: 100px;
-    margin-right: 100px;
+    @include margen-main;
     display: grid;
     grid-template-areas:
     "titulo titulo titulo titulo"

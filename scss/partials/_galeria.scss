@@ -4,8 +4,7 @@
 @import "../sass/mixins";
 
 .galeria-imagenes {
-    margin-left: 100px;
-    margin-right: 100px;
+    @include margen-main;
     #foto-uno, #foto-tres, #foto-cinco {
         margin-left: 37.5%;
     }
@@ -24,8 +23,7 @@
 
 .galeria-videos {
     margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    @include margen-main;
     display: grid;
     grid-template-areas:
     "titulo titulo"

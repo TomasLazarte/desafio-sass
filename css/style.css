@@ -6,46 +6,44 @@
   box-sizing: border-box; }
 
 /* ------- ESTILOS GENERALES ------- */
-body header {
+.header-footer, body header, body header #barra-nav, body #footer {
   height: 60px;
+  background-image: radial-gradient(#222432, #171717); }
+
+body header {
   position: fixed;
   right: 0;
   left: 0;
-  top: 0;
-  background-image: radial-gradient(#222432, #171717); }
-  body header #barra-nav {
-    background-image: radial-gradient(#222432, #171717); }
-    body header #barra-nav #contenedor-nav {
-      padding: 0rem; }
-      body header #barra-nav #contenedor-nav #home {
-        margin-left: 100px;
+  top: 0; }
+  body header #barra-nav #contenedor-nav {
+    padding: 0rem; }
+    body header #barra-nav #contenedor-nav #home {
+      margin-left: 100px;
+      font-size: 18px;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      color: beige; }
+    body header #barra-nav #contenedor-nav #boton-hamburguesa {
+      background-color: beige;
+      margin-right: 20px; }
+    body header #barra-nav #contenedor-nav .menu {
+      margin-right: 100px;
+      flex-grow: 0; }
+      body header #barra-nav #contenedor-nav .menu #menu-secciones a {
+        font-size: 18px;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
-        font-size: 18px;
-        color: beige; }
-      body header #barra-nav #contenedor-nav #boton-hamburguesa {
-        background-color: beige;
-        margin-right: 20px; }
-      body header #barra-nav #contenedor-nav .menu {
-        margin-right: 100px;
-        flex-grow: 0; }
-        body header #barra-nav #contenedor-nav .menu #menu-secciones a {
-          text-decoration: none;
-          font-family: "Montserrat", sans-serif;
-          font-size: 18px;
-          color: beige;
-          transition: all .25s; }
-          body header #barra-nav #contenedor-nav .menu #menu-secciones a:hover {
-            color: #C9D1D9;
-            text-decoration: underline; }
+        color: beige;
+        transition: all .25s; }
+        body header #barra-nav #contenedor-nav .menu #menu-secciones a:hover {
+          color: #C9D1D9;
+          text-decoration: underline; }
 
 body main {
   background-image: radial-gradient(#787878, #171717);
   margin-top: 60px; }
 
 body #footer {
-  height: 60px;
-  background-image: radial-gradient(#222432, #171717);
   display: flex;
   align-items: center; }
   body #footer div p {
@@ -57,7 +55,8 @@ body #footer {
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
-  color: #C9D1D9; }
+  color: #C9D1D9;
+  font-weight: bold; }
 
 @media (max-width: 725px) {
   #home {
@@ -82,6 +81,10 @@ h2 {
     font-size: 15px; } }
 
 /* ------- SECCION INICIO ------- */
+.header-footer, body header, body header #barra-nav, body #footer {
+  height: 60px;
+  background-image: radial-gradient(#222432, #171717); }
+
 .inicio-contenedor {
   text-align: center; }
   .inicio-contenedor .inicio-imagen, .inicio-contenedor .inicio-titulo, .inicio-contenedor .inicio-tour {
@@ -106,7 +109,7 @@ h2 {
       margin: 5px;
       transition: all .25s; }
       .inicio-contenedor .inicio-tour .primera-col-items:hover, .inicio-contenedor .inicio-tour .segunda-col-items:hover, .inicio-contenedor .inicio-tour .tercera-col-items:hover {
-        color: beige;
+        color: white;
         font-size: 19px; }
 
 @media (max-width: 725px) {
@@ -132,6 +135,10 @@ h2 {
     font-size: 13px; } }
 
 /* ------- SECCION ABOUT ------- */
+.header-footer, body header, body header #barra-nav, body #footer {
+  height: 60px;
+  background-image: radial-gradient(#222432, #171717); }
+
 .about-contenedor {
   margin-left: 100px;
   margin-right: 100px;
@@ -209,6 +216,10 @@ h2 {
       width: 300px; } }
 
 /* ------- SECCION DISCOGRAFÍA ------- */
+.header-footer, body header, body header #barra-nav, body #footer {
+  height: 60px;
+  background-image: radial-gradient(#222432, #171717); }
+
 .discografia-contenedor {
   margin-left: 100px;
   margin-right: 100px;
@@ -318,6 +329,10 @@ h2 {
       width: 220px; } }
 
 /* ------- SECCION GALERÍA ------- */
+.header-footer, body header, body header #barra-nav, body #footer {
+  height: 60px;
+  background-image: radial-gradient(#222432, #171717); }
+
 .galeria-imagenes {
   margin-left: 100px;
   margin-right: 100px; }
@@ -375,6 +390,10 @@ h2 {
       width: 300px; } }
 
 /* ------- SECCION CONTACTO ------- */
+.header-footer, body header, body header #barra-nav, body #footer {
+  height: 60px;
+  background-image: radial-gradient(#222432, #171717); }
+
 .contacto-contenedor {
   text-align: center;
   line-height: 2;
@@ -427,3 +446,7 @@ h2 {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.header-footer, body header, body header #barra-nav, body #footer {
+  height: 60px;
+  background-image: radial-gradient(#222432, #171717); }

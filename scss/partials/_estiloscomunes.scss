@@ -6,26 +6,22 @@
 
 body {
     header {
-        height: 60px;
+        @extend .header-footer;
         position: fixed;
         right: 0;
         left: 0;
         top: 0;
-        background-image: radial-gradient(#222432, #171717);
         #barra-nav {
-            background-image: radial-gradient(#222432, #171717);
+            @extend .header-footer;
             #contenedor-nav{
             padding: 0rem;
                 #home {
                     margin-left: 100px;
-                    text-decoration: none;
-                    font-family: $fuente;
-                    font-size: 18px;
-                    color: beige;
+                    @include estilos-nav;
                 }
                 
                 #boton-hamburguesa {
-                    background-color: beige;
+                    background-color: $color-letra;
                     margin-right: 20px;
                 }
                 
@@ -33,10 +29,7 @@ body {
                     margin-right: 100px;
                     flex-grow: 0;
                     #menu-secciones a {
-                        text-decoration: none;
-                        font-family: $fuente;
-                        font-size: 18px;
-                        color: beige;
+                        @include estilos-nav;
                         transition: all .25s;
                         &:hover {
                             color: #C9D1D9;
@@ -48,27 +41,24 @@ body {
         }
     }    
     main {
-        background-image: radial-gradient(rgb(120, 120, 120), #171717);
+        background-image: $color-fondo;
         margin-top: 60px;
     }
     #footer {
-        height: 60px;
-        background-image: radial-gradient(#222432, #171717);
+        @extend .header-footer;
         display: flex;
         align-items: center;
         div p    {
             margin: 0px;
             margin-left: 100px;
             font-family: $fuente;
-            color: beige;
+            color: $color-letra;
         }
     }
 }
 
 h2 {
-    font-family: $fuente;
-    font-size: 30px;
-    color: #C9D1D9;
+    @include estilos-titulos;
 }
 
 
@@ -82,6 +72,7 @@ h2 {
     #menu-secciones a {
         font-size: 16px;
     }
+    // ^^^^^^
     #footer div .copyright {
         margin-left: 20px;
         font-size: 16px;
@@ -101,6 +92,7 @@ h2 {
     #menu-secciones a {
         font-size: 13px;
     }
+    // ^^^^^^
     #footer div .copyright {
         font-size: 13px;
     }     
