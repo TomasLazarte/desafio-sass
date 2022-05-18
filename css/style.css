@@ -6,65 +6,76 @@
   box-sizing: border-box; }
 
 /* ------- ESTILOS GENERALES ------- */
-.header-footer, body header, body #footer {
+.header-footer, header, #footer {
   height: 60px;
-  background-image: radial-gradient(#222432, #171717); }
+  background-color: #191919; }
 
-body header {
+header {
   position: fixed;
   right: 0;
   left: 0;
   top: 0; }
-  body header #barra-nav {
-    background-image: radial-gradient(#222432, #171717); }
-    body header #barra-nav #contenedor-nav {
+  header #barra-nav {
+    height: 60px; }
+    header #barra-nav #contenedor-nav {
+      background-color: #191919;
       padding: 0rem; }
-      body header #barra-nav #contenedor-nav #home {
+      header #barra-nav #contenedor-nav #home {
         margin-left: 100px;
         font-size: 18px;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
-        color: beige; }
-      body header #barra-nav #contenedor-nav #boton-hamburguesa {
-        background-color: beige;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.8); }
+        header #barra-nav #contenedor-nav #home img {
+          width: 50px;
+          height: 25px; }
+      header #barra-nav #contenedor-nav #boton-hamburguesa {
+        background-color: #ffffff;
         margin-right: 20px; }
-      body header #barra-nav #contenedor-nav .menu {
+      header #barra-nav #contenedor-nav .menu {
+        background-color: #191919;
         margin-right: 100px;
         flex-grow: 0; }
-        body header #barra-nav #contenedor-nav .menu #menu-secciones a {
+        header #barra-nav #contenedor-nav .menu #menu-secciones a {
           font-size: 18px;
           text-decoration: none;
           font-family: "Montserrat", sans-serif;
-          color: beige;
+          font-weight: bold;
+          color: rgba(255, 255, 255, 0.8);
           transition: all .25s; }
-          body header #barra-nav #contenedor-nav .menu #menu-secciones a:hover {
-            color: #C9D1D9;
-            text-decoration: underline; }
+          header #barra-nav #contenedor-nav .menu #menu-secciones a:hover {
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff; }
 
-body main {
-  background-image: radial-gradient(#787878, #171717);
+main {
+  background-color: #1e1e1e;
   margin-top: 60px; }
 
-body #footer {
+#footer {
   display: flex;
   align-items: center; }
-  body #footer div p {
+  #footer div p {
     margin: 0px;
     margin-left: 100px;
     font-family: "Montserrat", sans-serif;
-    color: beige; }
+    color: #ffffff;
+    font-weight: bold; }
 
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
-  color: #C9D1D9;
-  font-weight: bold; }
+  color: #f98518;
+  font-weight: 700; }
+
+@media (max-width: 990px) {
+  .menu {
+    margin-left: 20px; } }
 
 @media (max-width: 725px) {
-  #home {
-    margin-left: 20px;
-    font-size: 16px; }
-  #menu-secciones a {
+  header #barra-nav #contenedor-nav #home {
+    margin-left: 20px; }
+  header #barra-nav #contenedor-nav .menu #menu-secciones a {
     font-size: 16px; }
   #footer div .copyright {
     margin-left: 20px;
@@ -73,9 +84,7 @@ h2 {
     font-size: 20px; } }
 
 @media (max-width: 400px) {
-  #home {
-    font-size: 13px; }
-  #menu-secciones a {
+  header #barra-nav #contenedor-nav .menu #menu-secciones a {
     font-size: 13px; }
   #footer div .copyright {
     font-size: 13px; }
@@ -83,35 +92,39 @@ h2 {
     font-size: 15px; } }
 
 /* ------- SECCION INICIO ------- */
-.header-footer, body header, body #footer {
+.header-footer, header, #footer {
   height: 60px;
-  background-image: radial-gradient(#222432, #171717); }
+  background-color: #191919; }
 
-.inicio-contenedor {
-  text-align: center; }
-  .inicio-contenedor .inicio-imagen, .inicio-contenedor .inicio-titulo, .inicio-contenedor .inicio-tour {
-    animation-name: aparecer;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1; }
-  .inicio-contenedor .inicio-tour {
-    display: flex;
-    justify-content: space-evenly;
-    font-family: "Montserrat", sans-serif; }
-    .inicio-contenedor .inicio-tour .primera-col, .inicio-contenedor .inicio-tour .segunda-col, .inicio-contenedor .inicio-tour .tercera-col {
+.inicio-fondo {
+  background-image: url("/img/fondo-home.png"); }
+  .inicio-fondo .inicio-contenedor {
+    text-align: center; }
+    .inicio-fondo .inicio-contenedor .inicio-titulo {
+      padding-top: 50px;
+      padding-bottom: 50px; }
+    .inicio-fondo .inicio-contenedor .inicio-tour {
       display: flex;
-      flex-direction: column;
-      align-items: center; }
-    .inicio-contenedor .inicio-tour .primera-col-items, .inicio-contenedor .inicio-tour .segunda-col-items, .inicio-contenedor .inicio-tour .tercera-col-items {
-      font-size: 18px;
-      color: #C9D1D9;
-      background-color: #222432;
-      border-radius: 10px;
-      border: solid #171717 3px;
-      width: 100%;
-      margin: 5px;
-      transition: all .25s; }
-      .inicio-contenedor .inicio-tour .primera-col-items:hover, .inicio-contenedor .inicio-tour .segunda-col-items:hover, .inicio-contenedor .inicio-tour .tercera-col-items:hover {
-        color: white;
+      justify-content: space-evenly;
+      font-family: "Montserrat", sans-serif; }
+      .inicio-fondo .inicio-contenedor .inicio-tour .primera-col, .inicio-fondo .inicio-contenedor .inicio-tour .segunda-col, .inicio-fondo .inicio-contenedor .inicio-tour .tercera-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .inicio-fondo .inicio-contenedor .inicio-tour .primera-col-items, .inicio-fondo .inicio-contenedor .inicio-tour .segunda-col-items, .inicio-fondo .inicio-contenedor .inicio-tour .tercera-col-items {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: solid #191919 3px;
+        width: 100%;
+        margin: 5px;
+        transition: all .25s; }
+      .inicio-fondo .inicio-contenedor .inicio-tour .tercera-col-items:hover {
+        box-shadow: 0px 3px 3px 2px;
+        background-color: #f98518;
+        color: #ffffff;
         font-size: 19px; }
 
 @media (max-width: 725px) {
@@ -137,9 +150,9 @@ h2 {
     font-size: 13px; } }
 
 /* ------- SECCION ABOUT ------- */
-.header-footer, body header, body #footer {
+.header-footer, header, #footer {
   height: 60px;
-  background-image: radial-gradient(#222432, #171717); }
+  background-color: #191919; }
 
 .about-contenedor {
   margin-left: 100px;
@@ -148,7 +161,7 @@ h2 {
   grid-template-areas: "titulo titulo" "texto-uno imagen-uno" "texto-dos imagen-uno" "imagen-dos texto-tres";
   gap: 15px;
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: #ffffff;
   line-height: 2;
   font-size: 16px;
   align-items: center; }
@@ -218,9 +231,9 @@ h2 {
       width: 300px; } }
 
 /* ------- SECCION DISCOGRAFÍA ------- */
-.header-footer, body header, body #footer {
+.header-footer, header, #footer {
   height: 60px;
-  background-image: radial-gradient(#222432, #171717); }
+  background-color: #191919; }
 
 .discografia-contenedor {
   margin-left: 100px;
@@ -331,9 +344,9 @@ h2 {
       width: 220px; } }
 
 /* ------- SECCION GALERÍA ------- */
-.header-footer, body header, body #footer {
+.header-footer, header, #footer {
   height: 60px;
-  background-image: radial-gradient(#222432, #171717); }
+  background-color: #191919; }
 
 .galeria-imagenes {
   margin-left: 100px;
@@ -392,9 +405,9 @@ h2 {
       width: 300px; } }
 
 /* ------- SECCION CONTACTO ------- */
-.header-footer, body header, body #footer {
+.header-footer, header, #footer {
   height: 60px;
-  background-image: radial-gradient(#222432, #171717); }
+  background-color: #191919; }
 
 .contacto-contenedor {
   text-align: center;
@@ -405,7 +418,7 @@ h2 {
   .contacto-contenedor h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    color: #C9D1D9; }
+    color: #ffffff; }
   .contacto-contenedor .form .nombre, .contacto-contenedor .form .email, .contacto-contenedor .form .msj {
     width: 300px;
     margin-top: 10px;
@@ -449,6 +462,6 @@ h2 {
   100% {
     opacity: 1; } }
 
-.header-footer, body header, body #footer {
+.header-footer, header, #footer {
   height: 60px;
-  background-image: radial-gradient(#222432, #171717); }
+  background-color: #191919; }

@@ -4,56 +4,62 @@
 @import "../sass/extend";
 @import "../sass/mixins";
 
-body {
-    header {
-        @extend .header-footer;
-        position: fixed;
-        right: 0;
-        left: 0;
-        top: 0;
-        #barra-nav {
-            background-image: $degrade-azul;
-            #contenedor-nav{
-            padding: 0rem;
-                #home {
-                    margin-left: 100px;
+header {
+    @extend .header-footer;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    #barra-nav {
+        height: 60px;
+        #contenedor-nav{
+        background-color: $fondo-negro;
+        padding: 0rem;
+            #home {
+                margin-left: 100px;
+                @include estilos-nav;
+                img {
+                    width: 50px;
+                    height: 25px;
+                }
+            }
+            
+            #boton-hamburguesa {
+                background-color: $color-letra;
+                margin-right: 20px;
+            }
+            
+            .menu {
+                background-color: $fondo-negro;
+                margin-right: 100px;
+                flex-grow: 0;
+                #menu-secciones a {
                     @include estilos-nav;
-                }
-                
-                #boton-hamburguesa {
-                    background-color: $color-letra;
-                    margin-right: 20px;
-                }
-                
-                .menu {
-                    margin-right: 100px;
-                    flex-grow: 0;
-                    #menu-secciones a {
-                        @include estilos-nav;
-                        transition: all .25s;
-                        &:hover {
-                            color: #C9D1D9;
-                            text-decoration: underline;
-                        }
+                    transition: all .25s;
+                    &:hover {
+                        color: $color-letra;
+                        border-bottom: 2px solid $color-letra;
                     }
                 }
-            }        
+            }
         }
-    }    
-    main {
-        background-image: $color-fondo;
-        margin-top: 60px;
     }
-    #footer {
-        @extend .header-footer;
-        display: flex;
-        align-items: center;
-        div p    {
-            margin: 0px;
-            margin-left: 100px;
-            font-family: $fuente;
-            color: $color-letra;
-        }
+}    
+main {
+    background-color: $color-fondo;
+    margin-top: 60px;
+}
+
+#footer {
+    @extend .header-footer;
+    display: flex;
+    align-items: center;
+    div p {
+        margin: 0px;
+        margin-left: 100px;
+        font-family: $fuente;
+        color: $color-letra;
+        font-weight: bold;
     }
 }
 
@@ -61,38 +67,55 @@ h2 {
     @include estilos-titulos;
 }
 
+@media (max-width: 990px){
+    .menu {
+        margin-left: 20px;
+    }
+}
 
 @media (max-width: 725px){
-    // no me toma ni el home
-    // ni las secciones
-    #home {
-        margin-left: 20px;
-        font-size: 16px
-    }
-    #menu-secciones a {
-        font-size: 16px;
-    }
-    // ^^^^^^
+    header{
+        #barra-nav{
+            #contenedor-nav{
+                #home {
+                    margin-left: 20px;
+                }
+                .menu{
+                    #menu-secciones{
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }          
+
     #footer div .copyright {
         margin-left: 20px;
         font-size: 16px;
     }
     h2 {
         font-size: 20px;
-    }  
-}
+    }
+}    
 
 
 @media (max-width: 400px) {
-    // no me toma ni el home
-    // ni las secciones
-    #home {
-        font-size: 13px;
+    header{
+        #barra-nav{
+            #contenedor-nav{
+                .menu{
+                    #menu-secciones{
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
     }
-    #menu-secciones a {
-        font-size: 13px;
-    }
-    // ^^^^^^
+
     #footer div .copyright {
         font-size: 13px;
     }     

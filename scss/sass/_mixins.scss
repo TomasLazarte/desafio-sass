@@ -4,14 +4,15 @@
     font-size: $letra-grande;
     text-decoration: none;
     font-family: $fuente;
-    color: $color-letra;
+    font-weight: bold;
+    color: $nav-color;
 }
 
 @mixin estilos-titulos {
     font-family: $fuente;
     font-size: $letra-titulo;
     color: $color-titulo;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 @mixin margen-main {
